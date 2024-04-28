@@ -1,0 +1,41 @@
+
+body header h1 {
+    font-family: helvetica;
+    font-size: 100px;
+    font-weight: bold;
+    color: khaki;
+    background-image: url("../../resources/media/images/pattern.webp");
+    text-align: center;
+}
+
+
+
+.firsth {
+    font-family: helvetica;
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+    background-color: mediumspringgreen;
+}
+
+.secondh {
+    font-family: helvetica;
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+    background-color: lightcoral;
+}
+
+.thirdh {
+    font-family: helvetica;
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+    background-color: skyblue;
+}
+
+.pricetag {
+    font-family: helvetica;
+    font-weight: bold;
+    color: blue;
+}
