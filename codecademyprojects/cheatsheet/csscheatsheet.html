@@ -1,0 +1,2734 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Cheat Sheet</title>
+    <link rel="stylesheet" href="./cheatsheet.css">
+</head>
+<body>
+    <header>
+        <h1 id="top">Cheat Sheet</h1>
+    </header>
+    <main>
+        
+        <table class="table">
+            <caption class="title">Content</caption>
+            <tbody>
+                <tr>
+                    <td><a href="#backgrounds">Backgrounds</a></td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td><a href="#border">Border</a></td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td><a href="#boxmodel">Box Model</a></td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td><a href="#font">Font</a></td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td><a href="#text">Text</a></td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td><a href="#column">Column</a></td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td><a href="#colors">Colors</a></td>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <td><a href="#tabledesc">Table</a></td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td><a href="#list">List &amp; Markers</a></td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td><a href="#seltypes">Selector Types (Table)</a></td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td><a href="#animations">Animations</a></td>
+                    <td>11</td>
+                </tr>
+                <tr>
+                    <td><a href="#transitions">Transitions</a></td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td><a href="#ui">UI</a></td>
+                    <td>13</td>
+                </tr>
+                <tr>
+                    <td><a href="#pseudoclass">Pseudo-Class</a></td>
+                    <td>14</td>
+                </tr>
+                <tr>
+                    <td><a href="#pseudoelement">Pseudo-Element</a></td>
+                    <td>15</td>
+                </tr>
+                <tr>
+                    <td><a href="#absmeasurement">Absolute Measurement</a></td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <td><a href="#relmeasurement">Relative Measurement</a></td>
+                    <td>17</td>
+                </tr>
+                <tr>
+                    <td><a href="#angles">Angles</a></td>
+                    <td>18</td>
+                </tr>
+                <tr>
+                    <td><a href="#time">Time</a></td>
+                    <td>19</td>
+                </tr>
+                <tr>
+                    <td><a href="#frequency">Frequency</a></td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td><a href="#colors">Colors</a></td>
+                    <td>21</td>
+                </tr>
+                <tr>
+                    <td><a href="#speech">Speech</a></td>
+                    <td>22</td>
+                </tr>
+                <tr>
+                    <td><a href="#outline">Outline</a></td>
+                    <td>23</td>
+                </tr>
+                <tr>
+                    <td><a href="#transform">3D / 2D Transform</a></td>
+                    <td>24</td>
+                </tr>
+                <tr>
+                    <td><a href="#gencontent">Generated Content</a></td>
+                    <td>25</td>
+                </tr>
+                <tr>
+                    <td><a href="#linebox">Line Box</a></td>
+                    <td>26</td>
+                </tr>
+                <tr>
+                    <td><a href="#hyplink">Hyperlink</a></td>
+                    <td>27</td>
+                </tr>
+                <tr>
+                    <td><a href="#position">Positioning</a></td>
+                    <td>28</td>
+                </tr>
+                <tr>
+                    <td><a href="#ruby">Ruby</a></td>
+                    <td>29</td>
+                </tr>
+                <tr>
+                    <td><a href="#pagmedia">Paged Media</a></td>
+                    <td>30</td>
+                </tr>
+
+            </tbody>
+        </table>
+        <br>
+        <hr>
+
+        <div>
+            <div class="csscontainer">
+                <h2 id="backgrounds">Backgrounds</h2>
+                <ul>
+                    <li>background-image</li>
+                        <ul>
+                            <li>url</li>
+                            <li>gradients (linear-gradient: value;)</li>
+                            <li>none</li>
+                        </ul>
+                    <li>background-position</li>
+                        <ul>
+                            <li>top left</li>
+                            <li>top right</li>
+                            <li>top center</li>
+                            <li>center left</li>
+                            <li>center center</li>
+                            <li>center right</li>
+                            <li>bottom left</li>
+                            <li>bottom center</li>
+                            <li>bottom right</li>
+                            <li>x-% y-%</li>
+                            <li>x-pos y-pos</li>
+                        </ul>
+                    <li>background-size</li>
+                        <ul>
+                            <li>lenght</li>
+                            <li>%</li>
+                            <li>auto</li>
+                            <li>cover</li>
+                            <li>contain</li>
+                        </ul>
+                    <li>background-repeat</li>
+                        <ul>
+                            <li>repeat</li>
+                            <li>repeat-x</li>
+                            <li>repeat-y</li>
+                            <li>no-repeat</li>
+                        </ul>
+                    <li>background-attachment</li>
+                        <ul>
+                            <li>scroll</li>
+                            <li>fixed</li>
+                            <li>local</li>
+                        </ul>
+                    <li>background-origin</li>
+                        <ul>
+                            <li>border-box</li>
+                            <li>padding-box</li>
+                            <li>content-box</li>
+                        </ul>
+                    <li>background-clip</li>
+                        <ul>
+                            <li>border-box</li>
+                            <li>padding-box</li>
+                            <li>content-box</li>
+                        </ul>
+                    <li>background-color</li>
+                        <ul>
+                            <li>color</li>
+                            <li>transparent</li>
+                        </ul>
+                </ul>
+            </div>
+            <hr>
+            <div class="csscontainer">
+                <h2 id="border">Border</h2>
+                <ul>
+                    <li>border (border: 1px solid coral;)</li>
+                        <ul>
+                            <li>border-width</li>
+                            <li>border-style</li>
+                            <li>border-color</li>
+                        </ul>
+                    <li>border-width</li>
+                        <ul>
+                            <li>thin</li>
+                            <li>mediu</li>
+                            <li>thick</li>
+                            <li>lenght</li>
+                        </ul>
+                    <li>border-style</li>
+                        <ul>
+                            <li>none</li>
+                            <li>hidden</li>
+                            <li>dotted</li>
+                            <li>dashed</li>
+                            <li>solid</li>
+                            <li>double</li>
+                            <li>groove</li>
+                            <li>ridge</li>
+                            <li>inset</li>
+                            <li>outset</li>
+                        </ul>
+                    <li>border-color</li>
+                        <ul>
+                            <li>color</li>
+                        </ul>
+                    <li>border-bottom</li>
+                        <ul>
+                            <li>border-bottom-width</li>
+                            <li>border-style</li>
+                            <li>border-color</li>
+                        </ul>
+                    <li>border-left</li>
+                        <ul>
+                            <li>border-left-width</li>
+                            <li>border-style</li>
+                            <li>border-color</li>
+                        </ul>
+                    <li>border-left-style</li>
+                        <ul>
+                            <li>border-style</li>
+                        </ul>
+                    <li>border-right-color</li>
+                        <ul>
+                            <li>border-color</li>
+                        </ul>
+                    <li>border-right-width</li>
+                        <ul>
+                            <li>thin</li>
+                            <li>mediu</li>
+                            <li>thick</li>
+                            <li>lenght</li>
+                        </ul>
+                    <li>border-top-width</li>
+                        <ul>
+                            <li>thin</li>
+                            <li>mediu</li>
+                            <li>thick</li>
+                            <li>lenght</li>
+                        </ul>
+                    <li>border-break</li>
+                        <ul>
+                            <li>border-width</li>
+                            <li>border-style</li>
+                            <li>color</li>
+                            <li>close</li>
+                        </ul>
+                    <li>border-bottom-color</li>
+                        <ul>
+                            <li>border-color</li>
+                        </ul>
+                    <li>border-bottom-style</li>
+                        <ul>
+                            <li>border-style</li>
+                        </ul>
+                    <li>border-left-color</li>
+                        <ul>
+                            <li>border-color</li>
+                        </ul>
+                    <li>border-left-width</li>
+                        <ul>
+                            <li>thin</li>
+                            <li>mediu</li>
+                            <li>thick</li>
+                            <li>lenght</li>
+                        </ul>
+                    <li>border-right-style</li>
+                        <ul>
+                            <li>border-style</li>
+                        </ul>
+                    <li>border-top</li>
+                        <ul>
+                            <li>border-top-width</li>
+                            <li>border-style</li>
+                            <li>border-color</li>
+                        </ul>
+                    <li>border-top-color</li>
+                        <ul>
+                            <li>border-color</li>
+                        </ul>
+                    <li>border-top-style</li>
+                        <ul>
+                            <li>border-style</li>
+                        </ul>
+                    <li>box-shadow</li>
+                        <ul>
+                            <li>inset(length, length, length, length <color>)</li>
+                            <li>none</li>
+                        </ul>
+                    <li>border-collapse</li>
+                        <ul>
+                            <li>collapse</li>
+                            <li>separate</li>
+                        </ul>
+                    <li>border-image</li>
+                        <ul>
+                            <li>image (border-image: url(example.jpg) 30% round;)</li>
+                            <li>border-image-source</li>
+                            <li>border-image-slice</li>
+                            <li>border-image-width</li>
+                            <li>border-image-outset</li>
+                            <li>border-image-repeat</li>
+                            <li>none</li>
+                        </ul>
+                    <li>border-right</li>
+                        <ul>
+                            <li>border-right-width</li>
+                            <li>border-style</li>
+                            <li>border-color</li>
+                        </ul>
+                    <li>border-radius</li>
+                        <ul>
+                            <li>border-radius</li>
+                            <li>border-top-right-radius</li>
+                            <li>border-bottom-right-radius</li>
+                            <li>border-bottom-left-radius</li>
+                            <li>border-top-left-radius</li>
+                        </ul>
+                    <li>border-top-right-radius</li>
+                        <ul>
+                            <li>length</li>
+                        </ul>
+                    <li>border-bottom-right-radius</li>
+                        <ul>
+                            <li>length</li>
+                        </ul>
+                    <li>border-bottom-left-radius</li>
+                        <ul>
+                            <li>length</li>
+                        </ul>
+            </div>
+            <hr>
+            <div class="csscontainer">
+                <h2 id="boxmodel">Box Model</h2>
+                <ul>
+                    <li>float</li>
+                        <ul>
+                            <li>left</li>
+                            <li>right</li>
+                            <li>none</li>
+                        </ul>
+                    <li>height</li>
+                        <ul>
+                            <li>auto</li>
+                            <li>lenght</li>
+                            <li>%</li>
+                        </ul>
+                    <li>max-height</li>
+                        <ul>
+                            <li>none</li>
+                            <li>lenght</li>
+                            <li>%</li>
+                        </ul>
+                    <li>max-width</li>
+                        <ul>
+                            <li>none</li>
+                            <li>length</li>
+                            <li>%</li>
+                        </ul>
+                    <li>min-height</li>
+                        <ul>
+                            <li>none</li>
+                            <li>length</li>
+                            <li>%</li>
+                        </ul>
+                    <li>width</li>
+                        <ul>
+                            <li>auto</li>
+                            <li>length</li>
+                            <li>%</li>
+                        </ul>
+                    <li>margin</li>
+                        <ul>
+                            <li>margin-top</li>
+                            <li>margin-right</li>
+                            <li>margin-bottom</li>
+                            <li>margin-left</li>
+                        </ul>
+                    <li>margin-bottom</li>
+                        <ul>
+                            <li>auto</li>
+                            <li>length</li>
+                            <li>%</li>
+                        </ul>
+                    <li>margin-left</li>
+                        <ul>
+                            <li>auto</li>
+                            <li>length</li>
+                            <li>%</li>
+                        </ul>
+                    <li>margin-right</li>
+                        <ul>
+                            <li>auto</li>
+                            <li>length</li>
+                            <li>%</li>
+                        </ul>
+                    <li>margin-top</li>
+                        <ul>
+                            <li>auto</li>
+                            <li>length</li>
+                            <li>%</li>
+                        </ul>
+                    <li>padding</li>
+                        <ul>
+                            <li>padding-top</li>
+                            <li>padding-right</li>
+                            <li>padding-bottom</li>
+                            <li>padding-left</li>
+                        </ul>
+                    <li>padding-bottom</li>
+                        <ul>
+                            <li>length</li>
+                            <li>%</li>
+
+                        </ul>
+                    <li>padding-left</li>
+                        <ul>
+                            <li>length</li>
+                            <li>%</li>
+                        </ul>
+                    <li>padding-right</li>
+                        <ul>
+                            <li>length</li>
+                            <li>%</li>
+                        </ul>
+                    <li>padding-top</li>
+                        <ul>
+                            <li>length</li>
+                            <li>%</li>
+                        </ul>
+                    <li>display</li>
+                        <ul>
+                            <li>none</li>
+                            <li>inline</li>
+                            <li>inline-block</li>
+                            <li>flex</li>
+                            <li>inline-flex</li>
+                            <li>grid</li>
+                            <li>inline-grid</li>
+                            <li>contents</li>
+                            <li>list-item</li>
+                            <li>run-in</li>
+                            <li>compact</li>
+                            <li>table</li>
+                            <li>inline-table</li>
+                            <li>table-row-group</li>
+                            <li>table-header-group</li>
+                            <li>table-footer-group</li>
+                            <li>table-row</li>
+                            <li>table-column-group</li>
+                            <li>table-column</li>
+                            <li>table-cell</li>
+                            <li>table-caption</li>
+                            <li>ruby</li>
+                            <li>ruby-base</li>
+                            <li>ruby-text</li>
+                            <li>ruby-base-group</li>
+                            <li>ruby-text-group</li>
+                        </ul>
+                    <li>overflow</li>
+                        <ul>
+                            <li>visible</li>
+                            <li>hidden</li>
+                            <li>scroll</li>
+                            <li>auto</li>
+                            <li>no-contet</li>
+                            <li>no-display</li>
+                            <li>overflow-x</li>
+                            <li>overflowy</li>
+                        </ul>
+                    <li>overflow-style</li>
+                        <ul>
+                            <li>auto</li>
+                            <li>marquee-line</li>
+                            <li>marqueeblock</li>
+                        </ul>
+                    <li>overflow-x</li>
+                        <ul>
+                            <li>visible</li>
+                            <li>hidden</li>
+                            <li>scroll</li>
+                            <li>auto</li>
+                            <li>no-contet</li>
+                            <li>no-display</li>
+                        </ul>
+                    <li>visibility</li>
+                        <ul>
+                            <li>visible</li>
+                            <li>colapse</li>
+                            <li>hidden</li>
+                        </ul>
+                    <li>clear</li>
+                        <ul>
+                            <li>left</li>
+                            <li>right</li>
+                            <li>both</li>
+                            <li>none</li>
+                        </ul>
+                    
+                </ul>
+                
+            </div>
+            <hr>
+            <div class="csscontainer">
+                <h2 id="font">Font</h2>
+                <ul>
+                    <li>font</li>
+                        <ul>
+                            <li>font-style</li>
+                            <li>font-variant</li>
+                            <li>font-weight</li>
+                            <li>font-size</li>
+                            <li>line-height</li>
+                            <li>font-family</li>
+                            <li>caption</li>
+                            <li>messagebox</li>
+                            <li>small-caption</li>
+                            <li>status-bar</li>
+                        </ul>
+                    <li>font-size-adjust</li>
+                        <ul>
+                            <li>none</li>
+                            <li>inherit</li>
+                            <li>number</li>
+                        </ul>
+                    <li>font-family (font-family: serif, sans-serif, 'New Times Roman';)</li>
+                        <ul>
+                            <li>serif</li>
+                            <li>sans-serif</li>
+                            <li>'font name'</li>
+                        </ul>
+                    <li>font-style</li>
+                        <ul>
+                            <li>normal</li>
+                            <li>italic</li>
+                            <li>oblique</li>
+                            <li>inherit</li>
+                        </ul>
+                    <li>font-variant</li>
+                        <ul>
+                            <li>normal</li>
+                            <li>small-caps</li>
+                            <li>inherit</li>
+                        </ul>
+                    <li>font-size</li>
+                        <ul>
+                            <li>xx-small</li>
+                            <li>x-small</li>
+                            <li>small</li>
+                            <li>medium</li>
+                            <li>large</li>
+                            <li>*-large</li>
+                            <li>*xlarge</li>
+                            <li>smaller</li>
+                            <li>larger</li>
+                            <li>inherit</li>
+                            <li>number (em, px, vw)</li>
+                        </ul>
+                    <li>font-weight</li>
+                        <ul>
+                            <li>normal</li>
+                            <li>bold</li>
+                            <li>bolder</li>
+                            <li>lighter</li>
+                            <li>100</li>
+                            <li>200</li>
+                            <li>300</li>
+                            <li>400</li>
+                            <li>500</li>
+                            <li>600</li>
+                            <li>700</li>
+                            <li>800</li>
+                            <li>900</li>
+                            <li>inherit</li>
+                        </ul>
+                </ul>
+            </div>
+            <hr>
+            <div class="csscontainer">
+                <h2 id="text">Text</h2>
+                <ul>
+                    <li>direction</li>
+                        <ul>
+                            <li>ltr</li>
+                            <li>rtl</li>
+                            <li>inherit</li>
+                        </ul>
+                    <li>hanging-punctuation</li>
+                        <ul>
+                            <li>none</li>
+                            <li>start</li>
+                            <li>end</li>
+                            <li>endedge</li>
+                        </ul>
+                    <li>letter-spacing</li>
+                        <ul>
+                            <li>normal</li>
+                            <li>length</li>
+                        </ul>
+                    <li>text-outline</li>
+                        <ul>
+                            <li>none</li>
+                            <li>color</li>
+                            <li>length</li>
+                        </ul>
+                    <li>unicode-bidi</li>
+                        <ul>
+                            <li>normal</li>
+                            <li>embed</li>
+                            <li>bidi-override</li>
+                        </ul>
+                    <li>white-space</li>
+                        <ul>
+                            <li>normal</li>
+                            <li>pre</li>
+                            <li>nowrap</li>
+                            <li>pre-wrap</li>
+                            <li>pre-line</li>
+                        </ul>
+                    <li>white-space-collapse</li>
+                        <ul>
+                            <li>preserve</li>
+                            <li>collapse</li>
+                            <li>pre-servebreaks</li>
+                            <li>discard</li>
+                        </ul>
+                    <li>punctuation-trim</li>
+                        <ul>
+                            <li>none</li>
+                            <li>start</li>
+                            <li>end</li>
+                            <li>adjacent</li>
+                        </ul>
+                    <li>text-align</li>
+                        <ul>
+                            <li>start</li>
+                            <li>end</li>
+                            <li>left</li>
+                            <li>center</li>
+                            <li>right</li>
+                            <li>justify</li>
+                        </ul>
+                    <li>text-align-last</li>
+                        <ul>
+                            <li>start</li>
+                            <li>end</li>
+                            <li>left</li>
+                            <li>center</li>
+                            <li>right</li>
+                            <li>justify</li>
+                        </ul>
+                    <li>text-decoration</li>
+                        <ul>
+                            <li>none</li>
+                            <li>underline</li>
+                            <li>overline</li>
+                            <li>line-through</li>
+                            <li>blink</li>
+                        </ul>
+                    <li>text-shadow</li>
+                        <ul>
+                            <li>none</li>
+                            <li>color</li>
+                            <li>lenght</li>
+                        </ul>
+                    <li>word-break</li>
+                        <ul>
+                            <li>normal</li>
+                            <li>keep-all</li>
+                            <li>loose</li>
+                            <li>break-strict</li>
+                            <li>break-all</li>
+                        </ul>
+                    <li>word-wrap</li>
+                        <ul>
+                            <li>normal</li>
+                            <li>nowrap</li>
+                        </ul>
+                    <li>text-emphasis</li>
+                        <ul>
+                            <li>none</li>
+                            <li>accent</li>
+                            <li>dot</li>
+                            <li>circle</li>
+                            <li>disc</li>
+                            <li>before</li>
+                            <li>after</li>
+                        </ul>
+                    <li>text-indent</li>
+                        <ul>
+                            <li>lenght</li>
+                        </ul>
+                    <li>text-justify</li>
+                        <ul>
+                            <li>auto</li>
+                            <li>inter-word</li>
+                            <li>interideograph</li>
+                            <li>inter-cluster</li>
+                            <li>distribute</li>
+                            <li>kashida</li>
+                            <li>tibetan</li>
+                        </ul>
+                    <li>text-transform</li>
+                        <ul>
+                            <li>none</li>
+                            <li>capitalize</li>
+                            <li>uppercase</li>
+                            <li>lowercase</li>
+                        </ul>
+                    <li>text-wrap</li>
+                        <ul>
+                            <li>normal</li>
+                            <li>unrestricted</li>
+                            <li>none</li>
+                            <li>suppress</li>
+                        </ul>
+                    <li>word-spacing</li>
+                        <ul>
+                            <li>normal</li>
+                            <li>lenght</li>
+                        </ul>
+                </ul>
+            
+            </div>
+            <hr>
+            <div class="csscontainer">
+                <h2 id="column">Column</h2>
+                <ul>
+                    <li>column-count</li>
+                        <ul>
+                            <li>auto</li>
+                            <li>number</li>
+                        </ul>
+                    <li>column-fill</li>
+                        <ul>
+                            <li>auto</li>
+                            <li>balance</li>
+                        </ul>
+                    <li>column-gap</li>
+                        <ul>
+                            <li>normal</li>
+                            <li>length</li>
+                        </ul>
+                    <li>column-rule</li>
+                        <ul>
+                            <li>column-rule-width</li>
+                            <li>column-rule-style</li>
+                            <li>column-rule-color</li>
+                        </ul>
+                    <li>column-rule-style</li>
+                        <ul>
+                            <li>border-style</li>
+                        </ul>
+                    <li>columns</li>
+                        <ul>
+                            <li>column-width</li>
+                            <li>column-count</li>
+                        </ul>
+                    <li>column-rule-width</li>
+                        <ul>
+                            <li>thin</li>
+                            <li>medium</li>
+                            <li>thick</li>
+                            <li>length</li>
+                        </ul>
+                    <li>column-span</li>
+                        <ul>
+                            <li>1</li>
+                            <li>all</li>
+                        </ul>
+                    <li>column-width</li>
+                        <ul>
+                            <li>auto</li>
+                            <li>length</li>
+                        </ul>
+                </ul>
+             
+            </div>
+            <hr>
+            <div class="csscontainer">
+                <h2 id="colors">Colors</h2>
+                <ul>
+                    <li>color</li>
+                        <ul>
+                            <li>inherit</li>
+                            <li>color</li>
+                        </ul>
+                    <li>opacity</li>
+                        <ul>
+                            <li>inherit</li>
+                            <li>number</li>
+                        </ul>
+                </ul>
+                
+            </div>
+            <hr> 
+            <div class="csscontainer">
+                <h2 id="tabledesc">Table</h2>
+                <ul>
+                    <li>border-collapse</li>
+                        <ul>
+                            <li>collapse</li>
+                            <li>separate</li>
+                        </ul>
+                    <li>empty-cells</li>
+                        <ul>
+                            <li>show</li>
+                            <li>hide</li>
+                        </ul>
+                    <li>border-spacing</li>
+                        <ul>
+                            <li>lenght</li>
+                            <li>lenght</li>
+                        </ul>
+                    <li>table-layout</li>
+                        <ul>
+                            <li>auto</li>
+                            <li>fixed</li>
+                        </ul>
+                    <li>caption-side</li>
+                        <ul>
+                            <li>top</li>
+                            <li>bottom</li>
+                            <li>left</li>
+                            <li>right</li>
+                        </ul>
+                </ul>
+              
+            </div>
+            <hr> 
+            <div class="csscontainer">
+                <h2 id="list">List &amp; Markers</h2>
+                <ul>
+                    <li>list-style</li>
+                        <ul>
+                            <li>list-style-type</li>
+                            <li>list-style-position</li>
+                            <li>list-style-image</li>
+                        </ul>
+                    <li>list-style-image</li>
+                        <ul>
+                            <li>none</li>
+                            <li>url</li>
+                        </ul>
+                    <li>list-style-type</li>
+                        <ul>
+                            <li>none</li>
+                            <li>asterisks</li>
+                            <li>box</li>
+                            <li>check</li>
+                            <li>circle</li>
+                            <li>diamond</li>
+                            <li>disc</li>
+                            <li>hyphen</li>
+                            <li>square</li>
+                            <li>decimal</li>
+                            <li>decimalleading-zero</li>
+                            <li>lower-roman</li>
+                            <li>upper-roman</li>
+                            <li>lower-alpha</li>
+                            <li>upper-alpha</li>
+                            <li>lower-greek</li>
+                            <li>lower-latin</li>
+                            <li>upper-latin</li>
+                            <li>hebrew</li>
+                            <li>armenian</li>
+                            <li>georgian</li>
+                            <li>cjk-ideographic</li>
+                            <li>hiragana</li>
+                            <li>katakana</li>
+                            <li>hiragana-iroha</li>
+                            <li>katakana-iroha</li>
+                            <li>footnotes</li>
+                        </ul>
+                    <li>marker-offset</li>
+                        <ul>
+                            <li>auto</li>
+                            <li>length</li>
+                        </ul>
+                </ul>
+                
+            </div>
+            <hr> 
+            <div class="csscontainer">
+                <h2 id="seltypes">Selector types</h2>
+                <table class="table">            
+                    <tbody>
+                        <tr>
+                            <th>Selector</th>
+                            <th >Example</th>
+                            <th>Example description</th>
+                        </tr>
+                        <tr>
+                            <td>.<i>class</i></td>
+                            <td>.intro</td>
+                            <td>Selects all elements with class="intro"</td>
+                        </tr>
+                        <tr>
+                            <td><em>.class1.class2</em></td>
+                            <td>.name1.name2</td>
+                            <td>Selects all elements with both <em>name1</em> and <em>name2</em> set 
+                            within its class attribute</td>
+                        </tr>  
+                        <tr>
+                            <td><em>.class1 .class2</em></td>
+                            <td>.name1 .name2</td>
+                            <td>Selects all elements with <em>name2</em> that is a descendant of an 
+                            element with <em>name1</em></td>
+                        </tr>  
+                        <tr>
+                            <td>#<i>id</i></td>
+                            <td>#firstname</td>
+                            <td>Selects the element with id="firstname"</td>
+                        </tr>  <tr>
+                            <td>*</td>
+                            <td>*</td>
+                            <td>Selects all elements</td>
+                        </tr>
+                        <tr>
+                            <td><i>element</i></td>
+                            <td>p</td>
+                            <td>Selects all &lt;p&gt; elements</td>
+                        </tr>
+                        <tr>
+                            <td><i>element.class</i></td>
+                            <td>p.intro</td>
+                            <td>Selects all &lt;p&gt; elements with class="intro"</td>
+                        </tr>
+                        <tr>
+                            <td><i>element,element</i></td>
+                            <td>div, p</td>
+                            <td>Selects all &lt;div&gt; elements and all &lt;p&gt; elements</td>
+                        </tr>
+                        <tr>
+                            <td><i>element</i> <i>element</i></td>
+                            <td>div p</td>
+                            <td>Selects all &lt;p&gt; elements inside &lt;div&gt; elements</td>
+                        </tr>
+                        <tr>
+                            <td><i>element</i>&gt;<i>element</i></td>
+                            <td>div &gt; p</td>
+                            <td>Selects all &lt;p&gt; elements where the parent is a &lt;div&gt; element</td>
+                        </tr>
+                        <tr>
+                            <td><i>element</i>+<i>element</i></td>
+                            <td>div + p</td>
+                            <td>Selects the first &lt;p&gt; element that is placed immediately after &lt;div&gt; elements</td>
+                        </tr>
+                        <tr>
+                            <td><i>element1</i>~<i>element2</i></td>
+                            <td>p ~ ul</td>
+                            <td>Selects every &lt;ul&gt; element that is preceded by a &lt;p&gt; element</td>
+                        </tr>
+                        <tr>
+                            <td>[<i>attribute</i>]</td>
+                            <td>[target]</td>
+                            <td>Selects all elements with a target attribute</td>
+                        </tr>
+                        <tr>
+                            <td>[<i>attribute</i>=<i>value</i>]</td>
+                            <td>[target="_blank"]</td>
+                            <td>Selects all elements with target="_blank"</td>
+                        </tr>
+                        <tr>
+                            <td>[<i>attribute</i>~=<i>value</i>]</td>
+                            <td>[title~="flower"]</td>
+                            <td>Selects all elements with a title attribute containing the word "flower"</td>
+                        </tr>
+                        <tr>
+                            <td>[<i>attribute</i>|=<i>value</i>]</td>
+                            <td>[lang|="en"]</td>
+                            <td>Selects all elements with a lang attribute value equal to "en" or 
+                            starting with "en-"</td>
+                        </tr>
+                        <tr>
+                            <td>[<i>attribute</i>^=<i>value</i>]</td>
+                            <td>a[href^="https"]</td>
+                            <td>Selects every &lt;a&gt; element whose href attribute value begins with "https"</td>
+                        </tr>
+                        <tr>
+                            <td>[<i>attribute</i>$=<i>value</i>]</td>
+                            <td>a[href$=".pdf"]</td>
+                            <td>Selects every &lt;a&gt; element whose href attribute value ends with ".pdf"</td>
+                        </tr>
+                        <tr>
+                            <td>[<i>attribute</i>*=<i>value</i>]</td>
+                            <td>a[href*="w3schools"]</td>
+                            <td>Selects every &lt;a&gt; element whose href attribute value contains the substring "w3schools"</td>
+                        </tr>
+                        <tr>
+                            <td>:active</td>
+                            <td>a:active</td>
+                            <td>Selects the active link</td>
+                        </tr>
+                        <tr>
+                            <td>::after</td>
+                            <td>p::after</td>
+                            <td>Insert something after the content of each &lt;p&gt; element</td>
+                        </tr>
+                        <tr>
+                            <td>::before</td>
+                            <td>p::before</td>
+                            <td>Insert something before&nbsp;the content of each &lt;p&gt; element</td>
+                        </tr>
+                        <tr>
+                            <td>:checked</td>
+                            <td>input:checked</td>
+                            <td>Selects every checked &lt;input&gt; element</td>
+                        </tr>
+                        <tr>
+                            <td>:default</td>
+                            <td>input:default</td>
+                            <td>Selects the default &lt;input&gt; element</td>
+                        </tr>
+                        <tr>
+                            <td>:disabled</td>
+                            <td>input:disabled</td>
+                            <td>Selects every disabled &lt;input&gt; element</td>
+                        </tr>
+                        <tr>
+                            <td>:empty</td>
+                            <td>p:empty</td>
+                            <td>Selects every &lt;p&gt; element that has no children (including text nodes)</td>
+                        </tr>
+                        <tr>
+                            <td>:enabled</td>
+                            <td>input:enabled</td>
+                            <td>Selects every enabled &lt;input&gt; element</td>
+                        </tr>
+                        <tr>
+                            <td>:first-child</td>
+                            <td>p:first-child</td>
+                            <td>Selects every &lt;p&gt; element that is the first child of its parent</td>
+                        </tr>
+                        <tr>
+                            <td>::first-letter</td>
+                            <td>p::first-letter</td>
+                            <td>Selects the first letter of every &lt;p&gt; element</td>
+                        </tr>
+                        <tr>
+                            <td>::first-line</td>
+                            <td>p::first-line</td>
+                            <td>Selects the first line of every &lt;p&gt; element</td>
+                        </tr>
+                        <tr>
+                            <td>:first-of-type</td>
+                            <td>p:first-of-type</td>
+                            <td>Selects every &lt;p&gt; element that is the first &lt;p&gt; element of its parent</td>
+                        </tr>
+                        <tr>
+                            <td>:focus</td>
+                            <td>input:focus</td>
+                            <td>Selects the input element which has focus</td>
+                        </tr>
+                        <tr>
+                            <td>:fullscreen</td>
+                            <td>:fullscreen</td>
+                            <td>Selects the element that is in full-screen mode</td>
+                        </tr>
+                        <tr>
+                            <td>:hover</td>
+                            <td>a:hover</td>
+                            <td>Selects links on mouse over</td>
+                        </tr>
+                        <tr>
+                            <td>:in-range</td>
+                            <td>input:in-range</td>
+                            <td>Selects input elements with a value within a specified range</td>
+                        </tr>
+                        <tr>
+                            <td>:indeterminate</td>
+                            <td>input:indeterminate</td>
+                            <td>Selects input elements that are in an indeterminate state</td>
+                        </tr>
+                        <tr>
+                            <td>:invalid</td>
+                            <td>input:invalid</td>
+                            <td>Selects all input elements with an invalid value</td>
+                        </tr>
+                        <tr>
+                            <td>:lang(<i>language</i>)</td>
+                            <td>p:lang(it)</td>
+                            <td>Selects every &lt;p&gt; element with a lang attribute equal to "it" (Italian)</td>
+                        </tr>
+                        <tr>
+                            <td>:last-child</td>
+                            <td>p:last-child</td>
+                            <td>Selects every &lt;p&gt; element that is the last child of its parent</td>
+                        </tr>
+                        <tr>
+                            <td>:last-of-type</td>
+                            <td>p:last-of-type</td>
+                            <td>Selects every &lt;p&gt; element that is the last &lt;p&gt; element of its parent</td>
+                        </tr>
+                        <tr>
+                            <td>:link</td>
+                            <td>a:link</td>
+                            <td>Selects all unvisited links</td>
+                        </tr>
+                        <tr>
+                            <td>::marker</td>
+                            <td>::marker</td>
+                            <td>Selects the markers of list items</td>
+                        </tr>
+                        <tr>
+                            <td>:not(<i>selector</i>)</td>
+                            <td>:not(p)</td>
+                            <td>Selects every element that is not a &lt;p&gt; element</td>
+                        </tr>
+                        <tr>
+                            <td>:nth-child(<i>n</i>)</td>
+                            <td>p:nth-child(2)</td>
+                            <td>Selects every &lt;p&gt; element that is the second child of its parent</td>
+                        </tr>
+                        <tr>
+                            <td>:nth-last-child(<i>n</i>)</td>
+                            <td>p:nth-last-child(2)</td>
+                            <td>Selects every &lt;p&gt; element that is the second child of its parent, counting from the last child</td>
+                        </tr>
+                        <tr>
+                            <td>:nth-last-of-type(<i>n</i>)</td>
+                            <td>p:nth-last-of-type(2)</td>
+                            <td>Selects every &lt;p&gt; element that is the second &lt;p&gt; element of its parent, counting from the last child</td>
+                        </tr>
+                        <tr>
+                            <td>:nth-of-type(<i>n</i>)</td>
+                            <td>p:nth-of-type(2)</td>
+                            <td>Selects every &lt;p&gt; element that is the second &lt;p&gt; element of its parent</td>
+                        </tr>
+                        <tr>
+                            <td>:only-of-type</td>
+                            <td>p:only-of-type</td>
+                            <td>Selects every &lt;p&gt; element that is the only &lt;p&gt; element of its parent</td>
+                        </tr>
+                        <tr>
+                            <td>:only-child</td>
+                            <td>p:only-child</td>
+                            <td>Selects every &lt;p&gt; element that is the only child of its parent</td>
+                        </tr>
+                        <tr>
+                            <td>:optional</td>
+                            <td>input:optional</td>
+                            <td>Selects input elements with no "required" attribute</td>
+                        </tr>
+                        <tr>
+                            <td>:out-of-range</td>
+                            <td>input:out-of-range</td>
+                            <td>Selects input elements with a value outside a specified range</td>
+                        </tr>
+                        <tr>
+                            <td>::placeholder</td>
+                            <td>input::placeholder</td>
+                            <td>Selects input elements with the "placeholder" attribute specified</td>
+                        </tr>
+                        <tr>
+                            <td>:read-only</td>
+                            <td>input:read-only</td>
+                            <td>Selects input elements with the "readonly" attribute specified</td>
+                        </tr>
+                        <tr>
+                            <td>:read-write</td>
+                            <td>input:read-write</td>
+                            <td>Selects input elements with the "readonly" attribute NOT specified</td>
+                        </tr>
+                        <tr>
+                            <td>:required</td>
+                            <td>input:required</td>
+                            <td>Selects input elements with the "required" attribute specified</td>
+                        </tr>
+                        <tr>
+                            <td>:root</td>
+                            <td>:root</td>
+                            <td>Selects the document's root element</td>
+                        </tr>
+                        <tr>
+                            <td>::selection</td>
+                            <td>::selection</td>
+                            <td>Selects the portion of an element that is selected by a user</td>
+                        </tr>
+                        <tr>
+                            <td>:target</td>
+                            <td>#news:target </td>
+                            <td>Selects the current active #news element (clicked on a URL containing that anchor name)</td>
+                        </tr>
+                        <tr>
+                            <td>:valid</td>
+                            <td>input:valid</td>
+                            <td>Selects all input elements with a valid value</td>
+                        </tr>
+                        <tr>
+                            <td>:visited</td>
+                            <td>a:visited</td>
+                            <td>Selects all visited links</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+            </div>
+            <hr> 
+            <div class="csscontainer">
+                <h2 id="animations">Animations</h2>
+                <ul>
+                    <li>animations</li>
+                        <ul>
+                            <li>animation-name</li>
+                            <li>animation-duration</li>
+                            <li>animation-timing-function</li>
+                            <li>animation-delay</li>
+                            <li>animation-iteration-count</li>
+                            <li>animation-direction</li>
+                        </ul>
+                    <li>animation-name</li>
+                        <ul>
+                            <li>none</li>
+                            <li>ident</li>
+                        </ul>
+                    <li>animation-duration</li>
+                        <ul>
+                            <li>time</li>
+                        </ul>
+                    <li>animation-timing-function</li>
+                        <ul>
+                            <li>ease</li>
+                            <li>linear</li>
+                            <li>ease-in</li>
+                            <li>ease-out</li>
+                            <li>ease-in-out</li>
+                            <li>cubic-Bezier</li>
+                        </ul>
+                    <li>animation-delay</li>
+                        <ul>
+                            <li>time</li>
+                        </ul>
+                    <li>animation-iteration-count</li>
+                        <ul>
+                            <li>inherit</li>
+                            <li>number</li>
+                        </ul>
+                    <li>animation-direction</li>
+                        <ul>
+                            <li>normal</li>
+                            <li>alternate</li>
+                        </ul>
+                    <li>animation-play-state</li>
+                        <ul>
+                            <li>running</li>
+                            <li>paused</li>
+                        </ul>
+                    <li>rotation</li>
+                        <ul>
+                            <li>angle</li>
+                            <li>rotation-point</li>
+                            <li>position (paired value off-set)</li>
+                        </ul>
+                </ul>
+                
+            </div>
+            <hr> 
+            <div class="csscontainer">
+                <h2 id="transitions">Transitions</h2>
+                <ul>
+                    <li>transitions</li>
+                        <ul>
+                            <li>transitions-proprety</li>
+                            <li>transitions-duration</li>
+                            <li>transitions-timing-function</li>
+                            <li>transitions-delay</li>
+                        </ul>
+                    <li>transitions-delay</li>
+                        <ul>
+                            <li>time</li>
+                        </ul>
+                    <li>transitions-duration</li>
+                        <ul>
+                            <li>time</li>
+                        </ul>
+                    <li>transitions-property</li>
+                        <ul>
+                            <li>none</li>
+                            <li>all</li>
+                        </ul>
+                    <li>transition-timing-function</li>
+                        <ul>
+                            <li>ease</li>
+                            <li>linear</li>
+                            <li>ease-in</li>
+                            <li>ease-out</li>
+                            <li>ease-in-out</li>
+                            <li>cubic-Bezier</li>
+                        </ul>
+                </ul>
+                
+            </div>
+            <hr> 
+            <div class="csscontainer">
+                <h2 id="ui">UI</h2>
+                <ul>
+                    <li>appearance</li>
+                        <ul>
+                            <li>normal</li>
+                            <li>inherit</li>
+                            <li>icon</li>
+                            <li>window</li>
+                            <li>desktop</li>
+                            <li>work-space</li>
+                            <li>document</li>
+                            <li>tooltip</li>
+                            <li>dialog</li>
+                            <li>button</li>
+                            <li>push-button</li>
+                            <li>hyperlonk</li>
+                            <li>radio-button</li>
+                            <li>checkbox</li>
+                            <li>menu-item</li>
+                            <li>tab</li>
+                            <li>menu</li>
+                            <li>menubar</li>
+                            <li>pull-down-menu</li>
+                            <li>pop-up-menu</li>
+                            <li>list-menu</li>
+                            <li>radio-group</li>
+                            <li>checkbox-group</li>
+                            <li>outline-tree</li>
+                            <li>range</li>
+                            <li>field</li>
+                            <li>combo-box</li>
+                            <li>signature</li>
+                            <li>password</li>
+                        </ul>
+                    <li>cursor</li>
+                        <ul>
+                            <li>auto</li>
+                            <li>crosshair</li>
+                            <li>default</li>
+                            <li>pointer</li>
+                            <li>move</li>
+                            <li>e-resize</li>
+                            <li>ne-resize</li>
+                            <li>nw-resize</li>
+                            <li>n-resize</li>
+                            <li>se-resize</li>
+                            <li>sw-resize</li>
+                            <li>s-resize</li>
+                            <li>w-resize</li>
+                            <li>text</li>
+                            <li>wait</li>
+                            <li>help</li>
+                        </ul>
+                    <li>icon</li>
+                        <ul>
+                            <li>auto</li>
+                            <li>inherit</li>
+                            <li>url</li>
+                        </ul>
+                    <li>nav-index</li>
+                        <ul>
+                            <li>auto</li>
+                            <li>inherit</li>
+                            <li>number</li>
+                        </ul>
+                    <li>nav-up</li>
+                        <ul>
+                            <li>auto</li>
+                            <li>inherit</li>
+                        </ul>
+                    <li>nav-right</li>
+                        <ul>
+                            <li>auto</li>
+                            <li>inherit</li>
+                        </ul>
+                    <li>nav-down</li>
+                        <ul>
+                            <li>auto</li>
+                            <li>inherit</li>
+                        </ul>
+                    <li>nav-left</li>
+                        <ul>
+                            <li>auto</li>
+                            <li>inherit</li>
+                        </ul>
+                    <li>resize</li>
+                        <ul>
+                            <li>none</li>
+                            <li>both</li>
+                            <li>horizontal</li>
+                            <li>vertical</li>
+                            <li>inherit</li>
+                        </ul>
+                </ul>
+                
+            </div>
+            <hr> 
+            <div class="csscontainer">
+                <h2 id="pseudoclass">Pseudo-Class</h2>
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <th>Selector</th>
+                            <th>Example</th>
+                            <th>Example description</th>
+                        </tr>
+                        <tr>
+                            <td>:active</td>
+                            <td>a:active</td>
+                            <td>Selects the active link</td>
+                        </tr>
+                        <tr>
+                            <td>:checked</td>
+                            <td>input:checked</td>
+                            <td>Selects every checked &lt;input&gt; element</td>
+                        </tr>
+                        <tr>
+                            <td>:disabled</td>
+                            <td>input:disabled</td>
+                            <td>Selects every disabled &lt;input&gt; element</td>
+                        </tr>
+                        <tr>
+                            <td>:empty</td>
+                            <td>p:empty</td>
+                            <td>Selects every &lt;p&gt; element that has no children</td>
+                        </tr>
+                        <tr>
+                            <td>:enabled</td>
+                            <td>input:enabled</td>
+                            <td>Selects every enabled &lt;input&gt; element</td>
+                        </tr>
+                        <tr>
+                            <td>:first-child</td>
+                            <td>p:first-child</td>
+                            <td>Selects every &lt;p&gt; elements that is the first child of its parent</td>
+                        </tr>
+                        <tr>
+                            <td>:first-of-type</td>
+                            <td>p:first-of-type</td>
+                            <td>Selects every &lt;p&gt; element that is the first &lt;p&gt; element of its parent</td>
+                        </tr>
+                        <tr>
+                            <td>:focus</td>
+                            <td>input:focus</td>
+                            <td>Selects the &lt;input&gt; element that has focus</td>
+                        </tr>
+                        <tr>
+                            <td>:hover</td>
+                            <td>a:hover</td>
+                            <td>Selects links on mouse over</td>
+                        </tr>
+                        <tr>
+                            <td>:in-range</td>
+                            <td>input:in-range</td>
+                            <td>Selects &lt;input&gt; elements with a value within a specified range</td>
+                        </tr>
+                        <tr>
+                            <td>:invalid</td>
+                            <td>input:invalid</td>
+                            <td>Selects all &lt;input&gt; elements with an invalid value</td>
+                        </tr>
+                        <tr>
+                            <td>:lang(<i>language</i>)</td>
+                            <td>p:lang(it)</td>
+                            <td>Selects every &lt;p&gt; element with a lang attribute value starting with "it"</td>
+                        </tr>
+                        <tr>
+                            <td>:last-child</td>
+                            <td>p:last-child</td>
+                            <td>Selects every &lt;p&gt; elements that is the last child of its parent</td>
+                        </tr>
+                        <tr>
+                            <td>:last-of-type</td>
+                            <td>p:last-of-type</td>
+                            <td>Selects every &lt;p&gt; element that is the last &lt;p&gt; element of its parent</td>
+                        </tr>
+                        <tr>
+                            <td>:link</td>
+                            <td>a:link</td>
+                            <td>Selects all unvisited links</td>
+                        </tr>
+                        <tr>
+                            <td>:not(selector)</td>
+                            <td>:not(p)</td>
+                            <td>Selects every element that is not a &lt;p&gt; element</td>
+                        </tr>
+                        <tr>
+                            <td>:nth-child(n)</td>
+                            <td>p:nth-child(2)</td>
+                            <td>Selects every &lt;p&gt; element that is the second child of its parent</td>
+                        </tr>
+                        <tr>
+                            <td>:nth-last-child(n)</td>
+                            <td>p:nth-last-child(2)</td>
+                            <td>Selects every &lt;p&gt; element that is the second child of its parent, counting from the last child</td>
+                        </tr>
+                        <tr>
+                            <td>:nth-last-of-type(n)</td>
+                            <td>p:nth-last-of-type(2)</td>
+                            <td>Selects every &lt;p&gt; element that is the second &lt;p&gt; element of its parent, counting from the last child</td>
+                        </tr>
+                        <tr>
+                            <td>:nth-of-type(n)</td>
+                            <td>p:nth-of-type(2)</td>
+                            <td>Selects every &lt;p&gt; element that is the second &lt;p&gt; element of its parent</td>
+                        </tr>
+                        <tr>
+                            <td>:only-of-type</td>
+                            <td>p:only-of-type</td>
+                            <td>Selects every &lt;p&gt; element that is the only &lt;p&gt; element of its parent</td>
+                        </tr>
+                        <tr>
+                            <td>:only-child</td>
+                            <td>p:only-child</td>
+                            <td>Selects every &lt;p&gt; element that is the only child of its parent</td>
+                        </tr>
+                        <tr>
+                            <td>:optional</td>
+                            <td>input:optional</td>
+                            <td>Selects &lt;input&gt; elements with no "required" attribute</td>
+                        </tr>
+                        <tr>
+                            <td>:out-of-range</td>
+                            <td>input:out-of-range</td>
+                            <td>Selects &lt;input&gt; elements with a value outside a specified range</td>
+                        </tr>
+                        <tr>
+                            <td>:read-only</td>
+                            <td>input:read-only</td>
+                            <td>Selects &lt;input&gt; elements with a "readonly" attribute specified</td>
+                        </tr>
+                        <tr>
+                            <td>:read-write</td>
+                            <td>input:read-write</td>
+                            <td>Selects &lt;input&gt; elements with no "readonly" attribute</td>
+                        </tr>
+                        <tr>
+                            <td>:required</td>
+                            <td>input:required</td>
+                            <td>Selects &lt;input&gt; elements with a "required" attribute specified</td>
+                        </tr>
+                        <tr>
+                            <td>:root</td>
+                            <td>root</td>
+                            <td>Selects the document's root element</td>
+                        </tr>
+                        <tr>
+                            <td>:target</td>
+                            <td>#news:target</td>
+                            <td>Selects the current active #news element (clicked on a URL containing that anchor name)</td>
+                        </tr>
+                        <tr>
+                            <td>:valid</td>
+                            <td>input:valid</td>
+                            <td>Selects all &lt;input&gt; elements with a valid value</td>
+                        </tr>
+                        <tr>
+                            <td>:visited</td>
+                            <td>a:visited</td>
+                            <td>Selects all visited links</td>
+                        </tr>
+                        </tbody>
+                        </table>
+                
+            </div>
+            <hr> 
+            <div class="csscontainer">
+                <h2 id="pseudoelement">Pseudo-Element</h2>
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <th>Selector</th>
+                            <th>Example</th>
+                            <th>Example description</th>
+                        </tr>
+                        <tr>
+                            <td>::after</td>
+                            <td class="notranslate">p::after</td>
+                            <td>Insert something after the content of each &lt;p&gt; element</td>
+                            </tr>
+                        <tr>
+                            <td>::before</td>
+                            <td class="notranslate">p::before</td>
+                            <td>Insert something before the content of each &lt;p&gt; element</td>
+                            </tr>
+                        <tr>
+                            <td>::first-letter</td>
+                            <td class="notranslate">p::first-letter</td>
+                            <td>Selects the first letter of each &lt;p&gt; element</td>
+                        </tr>
+                        <tr>
+                            <td>::first-line</td>
+                            <td class="notranslate">p::first-line</td>
+                            <td>Selects the first line of each &lt;p&gt; element</td>
+                        </tr>
+                        <tr>
+                            <td>::marker</td>
+                            <td class="notranslate">::marker</td>
+                            <td>Selects the markers of list items</td>
+                        </tr>
+                        <tr>
+                            <td>::selection</td>
+                            <td class="notranslate">p::selection</td>
+                            <td>Selects the portion of an element that is selected by a user</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <hr> 
+            <div class="csscontainer">
+                <h2 id="absmeasurement">Absolute measurement</h2>
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <th>Unit</th>
+                            <th>Description</th>
+                        </tr>
+                        <tr>
+                            <td>cm</td>
+                            <td>centimeters</td>
+                        </tr>
+                            <tr>
+                            <td>mm</td>
+                            <td>millimeters  
+                            </td>
+                            </tr>
+                        <tr>
+                            <td>in</td>
+                            <td>inches (1in = 96px = 2.54cm)</td>
+                        </tr>
+                            <tr>
+                            <td>px *</td>
+                            <td>pixels (1px = 1/96th of 1in)</td>
+                            </tr>
+                        <tr>
+                            <td>pt</td>
+                            <td>points (1pt = 1/72 of 1in)</td>
+                        </tr>
+                        <tr>
+                            <td>pc</td>
+                            <td>picas (1pc = 12 pt)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <hr> 
+            <div class="csscontainer">
+                <h2 id="relmeasurement">Relative Measurement</h2>
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <th>Unit</th>
+                            <th>Description</th>
+                        </tr>
+                        <tr>
+                            <td>em</td>
+                            <td>Relative to the font-size of the element (2em means 2 times the size of the current font)</td>
+                        </tr>
+                        <tr>
+                            <td>ex</td>
+                            <td>Relative to the x-height of the current font (rarely used)</td>
+                        </tr>
+                        <tr>
+                            <td>ch</td>
+                            <td>Relative to the width of the "0" (zero)</td>
+                        </tr>
+                        <tr>
+                            <td>rem</td>
+                            <td>Relative to font-size of the root element</td>
+                        </tr>
+                        <tr>
+                            <td>vw</td>
+                            <td>Relative to 1% of the width of the viewport*</td>
+                        </tr>
+                        <tr>
+                            <td>vh</td>
+                            <td>Relative to 1% of the height of the viewport*</td>
+                        </tr>
+                        <tr>
+                            <td>vmin</td>
+                            <td>Relative to 1% of viewport's* smaller dimension</td>
+                        </tr>
+                        <tr>
+                            <td>vmax</td>
+                            <td>Relative to 1% of viewport's* larger dimension</td>
+                        </tr>
+                        <tr>
+                            <td>%</td>
+                            <td>Relative to the parent element</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <hr> 
+            <div class="csscontainer">
+                <h2 id="angles">Angles</h2>
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <th>unit</th>
+                            <th>Description</th>
+                        </tr>
+                        <tr>
+                            <td>deg</td>
+                            <td>degrees</td>
+                        </tr>
+                        <tr>
+                            <td>grad</td>
+                            <td>grads</td>
+                        </tr>
+                        <tr>
+                            <td>rad</td>
+                            <td>radians</td>
+                        </tr>
+                        <tr>
+                            <td>turn</td>
+                            <td>turns</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+            </div>
+            <hr> 
+            <div class="csscontainer">
+                <h2 id="time">Time</h2>
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <th>Unit</th>
+                            <th>Description</th>
+                        </tr>
+                        <tr>
+                            <td>ms</td>
+                            <td>mili-seconds</td>
+                        </tr>
+                        <tr>
+                            <td>s</td>
+                            <td>seconds</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <hr> 
+            <div class="csscontainer">
+                <h2 id="frequency">Frequency</h2>
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <th>Unit</th>
+                            <th>Description</th>
+                        </tr>
+                        <tr>
+                            <td>Hz</td>
+                            <td>hertz</td>
+                        </tr>
+                        <tr>
+                            <td>kHz</td>
+                            <td>kilo-hertz</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <hr> 
+            <div class="csscontainer">
+                <h2 id="colors">Colors</h2>
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <th>Unit</th>
+                            <th>Example</th>
+                        </tr>
+                        <tr>
+                            <td>color name</td>
+                            <td>red, blue, green, dark green, etc.</td>
+                        </tr>
+                        <tr>
+                            <td>rgb(x,y,z)</td>
+                            <td>red = rgb(255,0,0)</td>
+                        </tr>
+                        <tr>
+                            <td>rgb(x%,y%,z%)</td>
+                            <td>red = rgb(100%,0,0)</td>
+                        </tr>
+                        <tr>
+                            <td>rgba(x,y,z,alpha)</td>
+                            <td>red = rgba(255,0,0,1)</td>
+                        </tr>
+                        <tr>
+                            <td>#rrggbb or #rgb</td>
+                            <td>red = #ff0000 (or shorthand - #f00)</td>
+                        </tr>
+                        <tr>
+                            <td>hsl(hue, saturation,
+                                lightness)</td>
+                            <td>red = hsl (0, 100%, 50%)</td>
+                        </tr>
+                        <tr>
+                            <td>flavor</td>
+                            <td>An accent color (typically chosen by the user) to customize
+                                the user interface of the user agent itself.</td>
+                        </tr>
+                        <tr>
+                            <td>currentColor</td>
+                            <td>computer value of the ‘currentColor’ keyword is the
+                                computed value of the ‘color’ property</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+            </div>
+            <hr> 
+            <div class="csscontainer">
+                <h2 id="speech">Speech</h2>
+                <ul>
+                    <li>cue</li>
+                        <ul>
+                            <li>cue-before</li>
+                            <li>cue-after</li>
+                        </ul>
+                    <li>cue-before</li>
+                        <ul>
+                            <li>url</li>
+                            <li>silent</li>
+                            <li>x-soft</li>
+                            <li>soft</li>
+                            <li>medium</li>
+                            <li>loud</li>
+                            <li>x-loud</li>
+                            <li>number</li>
+                            <li>none</li>
+                            <li>inherit</li>
+                            <li>%</li>
+                        </ul>
+                    <li>mark</li>
+                        <ul>
+                            <li>mark-before</li>
+                            <li>mark-after</li>
+                        </ul>
+                    <li>mark-before</li>
+                        <ul>
+                            <li>string</li>
+                        </ul>
+                    <li>mark-after</li>
+                        <ul>
+                            <li>string</li>
+                        </ul>
+                    <li>voice-pitch-range</li>
+                        <ul>
+                            <li>x-low</li>
+                            <li>low</li>
+                            <li>medium</li>
+                            <li>high</li>
+                            <li>xhigh</li>
+                            <li>inherit</li>
+                            <li>number</li>
+                        </ul>
+                    <li>voice-stress</li>
+                        <ul>
+                            <li>strong</li>
+                            <li>moderate</li>
+                            <li>none</li>
+                            <li>reduced</li>
+                            <li>inherit</li>
+                        </ul>
+                    <li>voice-volume</li>
+                        <ul>
+                            <li>silent</li>
+                            <li>x-soft</li>
+                            <li>soft</li>
+                            <li>medium</li>
+                            <li>loud</li>
+                            <li>x-loud</li>
+                            <li>number</li>
+                            <li>inherit</li>
+                            <li>%</li>
+                        </ul>
+                    <li>cue-after</li>
+                        <ul>
+                            <li>url</li>
+                            <li>silent</li>
+                            <li>x-soft</li>
+                            <li>soft</li>
+                            <li>medium</li>
+                            <li>loud</li>
+                            <li>x-loud</li>
+                            <li>none</li>
+                            <li>number</li>
+                            <li>%</li>
+                        </ul>
+                    <li>pause</li>
+                        <ul>
+                            <li>pause-before</li>
+                            <li>pause-after</li>
+                        </ul>
+                    <li>pause-before</li>
+                        <ul>
+                            <li>none</li>
+                            <li>x-weak</li>
+                            <li>weak</li>
+                            <li>medium</li>
+                            <li>strong</li>
+                            <li>x-strong</li>
+                            <li>inherit</li>
+                            <li>time</li>
+                        </ul>
+                    <li>phonemes</li>
+                        <ul>
+                            <li>string</li>
+                        </ul>
+                    <li>voice-duration</li>
+                        <ul>
+                            <li>time</li>
+                        </ul>
+                    <li>voice-family</li>
+                        <ul>
+                            <li>inherit</li>
+                            <li>specific-voice</li>
+                            <li>age</li>
+                            <li>generic-voice</li>
+                            <li>number</li>
+                        </ul>
+                    <li>voice-rate</li>
+                        <ul>
+                            <li>x-slow</li>
+                            <li>slow</li>
+                            <li>medium</li>
+                            <li>fast</li>
+                            <li>x-fast</li>
+                            <li>inherit</li>
+                            <li>%</li>
+                        </ul>
+                    <li>voice-pitch</li>
+                        <ul>
+                            <li>x-low</li>
+                            <li>low</li>
+                            <li>medium</li>
+                            <li>high</li>
+                            <li>xhigh</li>
+                            <li>inherit</li>
+                            <li>number</li>
+                            <li>%</li>
+                        </ul>
+                    <li>capition-side</li>
+                        <ul>
+                            <li>top</li>
+                            <li>bottom</li>
+                            <li>left</li>
+                            <li>right</li>
+                        </ul>
+                    <li>rest</li>
+                        <ul>
+                            <li>rest-before</li>
+                            <li>rest-after</li>
+                        </ul>
+                    <li>rest-before</li>
+                        <ul>
+                            <li>none</li>
+                            <li>x-weak</li>
+                            <li>weak</li>
+                            <li>medium</li>
+                            <li>strong</li>
+                            <li>x-strong</li>
+                            <li>inherit</li>
+                            <li>time</li>
+                        </ul>
+                    <li>rest-after</li>
+                        <ul>
+                            <li>none</li>
+                            <li>x-weak</li>
+                            <li>weak</li>
+                            <li>medium</li>
+                            <li>strong</li>
+                            <li>x-strong</li>
+                            <li>inherit</li>
+                            <li>time</li>
+                        </ul>
+                    <li>speak</li>
+                        <ul>
+                            <li>none</li>
+                            <li>normal</li>
+                            <li>spell-out</li>
+                            <li>digits</li>
+                            <li>literal-punctuation</li>
+                            <li>no-puntuation</li>
+                            <li>inherit-number</li>
+                        </ul>
+                    
+                </ul>
+                
+            </div>
+            <hr> 
+            <div class="csscontainer">
+                <h2 id="outline">Outline</h2>
+                <ul>
+                    <li>outline</li>
+                        <ul>
+                            <li>outline-color</li>
+                            <li>outline-style</li>
+                            <li>outline-width</li>
+                        </ul>
+                    <li>outline-offset</li>
+                        <ul>
+                            <li>inherit</li>
+                            <li>length</li>
+                        </ul>
+                    <li>outline-style</li>
+                        <ul>
+                            <li>none</li>
+                            <li>dotted</li>
+                            <li>dashed</li>
+                            <li>solid</li>
+                            <li>double</li>
+                            <li>groove</li>
+                            <li>ridge</li>
+                            <li>inset</li>
+                            <li>outset</li>
+                        </ul>
+                    <li>outline-width</li>
+                        <ul>
+                            <li>thin</li>
+                            <li>medium</li>
+                            <li>thick</li>
+                            <li>length</li>
+                        </ul>
+                </ul>
+            </div>
+            <hr> 
+            <div class="csscontainer">
+                <h2 id="transform">2D / 3D Transform</h2>
+                <table class="table">
+                    <caption class="title">CSS 2D Transform Properties</caption>
+                    <tbody>
+                        <tr>
+                            <th>Property</th>
+                            <th>Description</th>
+                        </tr>
+                        <tr>
+                            <td>transform</td>
+                            <td>Applies a 2D or 3D transformation to an element</td>
+                        </tr>
+                        <tr>
+                            <td>transform-origin</td>
+                            <td>Allows you to change the position on transformed elements</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
+                <table class="table">
+                    <caption class="title">CSS 2D Transform Methods</caption>
+                    <tbody>
+                        <tr>
+                            <th>Function</th>
+                            <th>Description</th>
+                        </tr>  
+                        <tr>
+                            <td>matrix(<i>n,n,n,n,n,n</i>)</td>
+                            <td>Defines a 2D transformation, using a matrix of six values</td>
+                        </tr>
+                        <tr>
+                            <td>translate(<i>x,y</i>)</td>
+                            <td>Defines a 2D translation, moving the element along the X- and the Y-axis</td>
+                        </tr>
+                        <tr>
+                            <td>translateX(<i>n</i>)</td>
+                            <td>Defines a 2D translation, moving the element along the X-axis</td>
+                        </tr>
+                        <tr>
+                            <td>translateY(<i>n</i>)</td>
+                            <td>Defines a 2D translation, moving the element along the Y-axis</td>
+                        </tr>
+                        <tr>
+                            <td>scale(<i>x,y</i>)</td>
+                            <td>Defines a 2D scale transformation, changing the elements width and height</td>
+                        </tr>
+                        <tr>
+                            <td>scaleX(<i>n</i>)</td>
+                            <td>Defines a 2D scale transformation, changing the element's width</td>
+                        </tr>
+                        <tr>
+                            <td>scaleY(<i>n</i>)</td>
+                            <td>Defines a 2D scale transformation, changing the element's height</td>
+                        </tr>
+                        <tr>
+                            <td>rotate(<i>angle</i>)</td>
+                            <td>Defines a 2D rotation, the angle is specified in the parameter</td>
+                        </tr>
+                        <tr>
+                            <td>skew(<i>x-angle,y-angle</i>)</td>
+                            <td>Defines a 2D skew transformation along the X- and the Y-axis</td>
+                        </tr>
+                        <tr>
+                            <td>skewX(<i>angle</i>)</td>
+                            <td>Defines a 2D skew transformation along the X-axis</td>
+                        </tr>
+                        <tr>
+                            <td>skewY(<i>angle</i>)</td>
+                            <td>Defines a 2D skew transformation along the Y-axis</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
+                <table class="table">
+                    <caption class="title">CSS 3D Transform Propreties</caption>
+                        <tbody>
+                            <tr>
+                                <th>Property</th>
+                                <th>Description</th>
+                            </tr>
+                            <tr>
+                                <td>transform</td>
+                                <td>Applies a 2D or 3D transformation to an element</td>
+                            </tr>
+                            <tr>
+                                <td>transform-origin</td>
+                                <td>Allows you to change the position on transformed elements</td>
+                            </tr>
+                            <tr>
+                                <td>transform-style</td>
+                                <td>Specifies how nested elements are rendered in 3D space</td>
+                            </tr>
+                            <tr>
+                                <td>perspective</td>
+                                <td>Specifies the perspective on how 3D elements are viewed</td>
+                            </tr>
+                            <tr>
+                                <td>perspective-origin</td>
+                                <td>Specifies the bottom position of 3D elements</td>
+                            </tr>
+                            <tr>
+                                <td>backface-visibility</td>
+                                <td>Defines whether or not an element should be visible when not facing the screen</td>
+                            </tr>
+                        </tbody>
+                </table>
+                <br>
+                <table class="table">
+                    <caption class="title">CSS 3D Transform Methods</caption>
+                    <tbody>
+                        <tr>
+                            <th>Function</th>
+                            <th>Description</th>
+                        </tr>  
+                        <tr>
+                            <td>matrix3d<br>
+                            (<i>n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n</i>)</td>
+                            <td>Defines a 3D transformation, using a 4x4 matrix of 16 values</td>
+                        </tr>
+                        <tr>
+                            <td>translate3d(<i>x,y,z</i>)</td>
+                            <td>Defines a 3D translation</td>
+                        </tr>
+                        <tr>
+                            <td>translateX(<i>x</i>)</td>
+                            <td>Defines a 3D translation, using only the value for the X-axis</td>
+                        </tr>
+                        <tr>
+                            <td>translateY(<i>y</i>)</td>
+                            <td>Defines a 3D translation, using only the value for the Y-axis</td>
+                        </tr>
+                        <tr>
+                            <td>translateZ(<i>z</i>)</td>
+                            <td>Defines a 3D translation, using only the value for the Z-axis</td>
+                        </tr>
+                        <tr>
+                            <td>scale3d(<i>x,y,z</i>)</td>
+                            <td>Defines a 3D scale transformation</td>
+                        </tr>
+                        <tr>
+                            <td>scaleX(<i>x</i>)</td>
+                            <td>Defines a 3D scale transformation by giving a value for the X-axis</td>
+                        </tr>
+                        <tr>
+                            <td>scaleY(<i>y</i>)</td>
+                            <td>Defines a 3D scale transformation by giving a value for the Y-axis</td>
+                        </tr>
+                        <tr>
+                            <td>scaleZ(<i>z</i>)</td>
+                            <td>Defines a 3D scale transformation by giving a value for the Z-axis</td>
+                        </tr>
+                        <tr>
+                            <td>rotate3d(<i>x,y,z,angle</i>)</td>
+                            <td>Defines a 3D rotation</td>
+                        </tr>
+                        <tr>
+                            <td>rotateX(<i>angle</i>)</td>
+                            <td>Defines a 3D rotation along the X-axis</td>
+                        </tr>
+                        <tr>
+                            <td>rotateY(<i>angle</i>)</td>
+                            <td>Defines a 3D rotation along the Y-axis</td>
+                        </tr>
+                        <tr>
+                            <td>rotateZ(<i>angle</i>)</td>
+                            <td>Defines a 3D rotation along the Z-axis</td>
+                        </tr>
+                        <tr>
+                            <td>perspective(<i>n</i>)</td>
+                            <td>Defines a perspective view for a 3D transformed element</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <hr> 
+            <div class="csscontainer">
+                <h2 id="gencontent">Generated Content</h2>
+                <ul>
+                    <li>bookmark-label</li>
+                        <ul>
+                            <li>content</li>
+                            <li>attr</li>
+                            <li>string</li>
+                        </ul>
+                    <li>bookmark-level</li>
+                        <ul>
+                            <li>none</li>
+                            <li>integer</li>
+                        </ul>
+                    <li>bookmark-target</li>
+                        <ul>
+                            <li>self</li>
+                            <li>url</li>
+                            <li>attr</li>
+                        </ul>
+                    <li>border-length</li>
+                        <ul>
+                            <li>self</li>
+                            <li>url</li>
+                            <li>attr</li>
+                        </ul>
+                    <li>content</li>
+                        <ul>
+                            <li>normal</li>
+                            <li>none</li>
+                            <li>inhibit</li>
+                            <li>url</li>
+                        </ul>
+                    <li>counter-reset</li>
+                        <ul>
+                            <li>none</li>
+                            <li>identifier number</li>
+                        </ul>
+                    <li>crop</li>
+                        <ul>
+                            <li>auto</li>
+                            <li>shape</li>
+                        </ul>
+                    <li>display</li>
+                        <ul>
+                            <li>normal</li>
+                            <li>none</li>
+                            <li>list-item</li>
+                        </ul>
+                    <li>float-offset</li>
+                        <ul>
+                            <li>length</li>
+                            <li>length</li>
+                        </ul>
+                    <li>hyphenate-after</li>
+                        <ul>
+                            <li>auto</li>
+                            <li>integer</li>
+                        </ul>
+                    <li>counter-increment</li>
+                        <ul>
+                            <li>none</li>
+                            <li>identifier number</li>
+                        </ul>
+                    <li>hyphenate-lines</li>
+                        <ul>
+                            <li>no-limit</li>
+                            <li>integer</li>
+                        </ul>
+                    <li>hyphenate-resource</li>
+                        <ul>
+                            <li>none</li>
+                            <li>url</li>
+                        </ul>
+                    <li>hyphens</li>
+                        <ul>
+                            <li>none</li>
+                            <li>manual</li>
+                            <li>auto</li>
+                        </ul>
+                    <li>image-resolution</li>
+                        <ul>
+                            <li>normal</li>
+                            <li>auto</li>
+                            <li>dpi</li>
+                        </ul>
+                    <li>hyphenate-before</li>
+                        <ul>
+                            <li>auto</li>
+                            <li>integer</li>
+                        </ul>
+                    <li>hyphenate-character</li>
+                        <ul>
+                            <li>auto</li>
+                            <li>string</li>
+                        </ul>
+                    <li>marks</li>
+                        <ul>
+                            <li>crop</li>
+                            <li>cross</li>
+                            <li>none</li>
+                        </ul>
+                    <li>move-to</li>
+                        <ul>
+                            <li>normal</li>
+                            <li>here</li>
+                            <li>identifier</li>
+                        </ul>
+                    <li>page-policy</li>
+                        <ul>
+                            <li>start</li>
+                            <li>first</li>
+                            <li>last</li>
+                        </ul>
+                    <li>quotes</li>
+                        <ul>
+                            <li>none</li>
+                            <li>string string string string</li>
+
+                        </ul>
+                    <li>string-set</li>
+                        <ul>
+                            <li>identifier</li>
+                            <li>content-list</li>
+                        </ul>
+                    <li>text-replace</li>
+                        <ul>
+                            <li>none</li>
+                            <li>[&lt;string&gt; &nbsp; &lt;string&gt;] &nbsp; +</li>
+                        </ul>
+                </ul>
+            </div>
+            <hr> 
+            <div class="csscontainer">
+                <h2 id="linebox">Line Box</h2>
+                <ul>
+                    <li>alignment-adjust</li>
+                        <ul>
+                            <li>auto</li>
+                            <li>baseline</li>
+                            <li>before-edge</li>
+                            <li>text-before-edge</li>
+                            <li>middle</li>
+                            <li>central</li>
+                            <li>after-edge</li>
+                            <li>textafter-edge</li>
+                            <li>ideographic</li>
+                            <li>alphabetic</li>
+                            <li>hanging</li>
+                            <li>mathematical</li>
+                            <li>length</li>
+                            <li>%</li>
+                        </ul>
+                    <li>alignment-baseline</li>
+                        <ul>
+                            <li>baseline</li>
+                            <li>ise-script</li>
+                            <li>before-edge</li>
+                            <li>text-before-edge</li>
+                            <li>after-edge</li>
+                            <li>text-after-edge</li>
+                            <li>central</li>
+                            <li>middle</li>
+                            <li>ideographic</li>
+                            <li>alphabetic</li>
+                            <li>mathematical</li>
+                            <li>hanging</li>
+                        </ul>
+                    <li>baseline-shift</li>
+                        <ul>
+                            <li>baseline</li>
+                            <li>sub</li>
+                            <li>super</li>
+                            <li>length</li>
+                            <li>%</li>
+                        </ul>
+                    <li>dominant-baseline</li>
+                        <ul>
+                            <li>auto</li>
+                            <li>use-script</li>
+                            <li>no-change</li>
+                            <li>reset-size</li>
+                            <li>alphabetic</li>
+                            <li>hanging</li>
+                            <li>ideographic</li>
+                            <li>mathematical</li>
+                            <li>text-after-edge</li>
+                            <li>central</li>
+                            <li>middle</li>
+                            <li>text-before-edge</li>
+                        </ul>
+                    <li>drop-initial-after-align</li>
+                        <ul>
+                            <li>alignment-baseline</li>
+                            <li>central</li>
+                            <li>middle</li>
+                            <li>after-edge</li>
+                            <li>text-after-edge</li>
+                            <li>ideographic</li>
+                            <li>alphabetic</li>
+                            <li>mathematical</li>
+                            <li>%</li>
+                        </ul>
+                    <li>drop-initial-before-align</li>
+                        <ul>
+                            <li>caps-height</li>
+                            <li>alignment-baseline</li>
+                        </ul>
+                    <li>drop-initial-before-adjust</li>
+                        <ul>
+                            <li>before-edge</li>
+                            <li>text-before-edge</li>
+                            <li>central</li>
+                            <li>middle</li>
+                            <li>hanging</li>
+                            <li>mathematical</li>
+                            <li>length</li>
+                            <li>%</li>
+                        </ul>
+                    <li>drop-initial-value</li>
+                        <ul>
+                            <li>initial</li>
+                            <li>integer</li>
+                        </ul>
+                    <li>drop-initial-size</li>
+                        <ul>
+                            <li>auto</li>
+                            <li>integer</li>
+                            <li>%</li>
+                            <li>line</li>
+                        </ul>
+                    <li>inline-box-align</li>
+                        <ul>
+                            <li>initial</li>
+                            <li>last</li>
+                            <li>iteger</li>
+                        </ul>
+                    <li>line-height</li>
+                        <ul>
+                            <li>normal</li>
+                            <li>number</li>
+                            <li>length</li>
+                            <li>%</li>
+                        </ul>
+                    <li>line-stacking</li>
+                        <ul>
+                            <li>line-stacking-strategy</li>
+                            <li>line-stacking-ruby</li>
+                            <li>line-stacking-shift</li>
+                        </ul>
+                    <li>line-stacking-strategy</li>
+                        <ul>
+                            <li>inline-line-height</li>
+                            <li>block-lineheight</li>
+                            <li>max-height</li>
+                            <li>grid-height</li>
+                        </ul>
+                    <li>line-stacking-ruby</li>
+                        <ul>
+                            <li>exclude-ruby</li>
+                            <li>include-ruby</li>
+                        </ul>
+                    <li>line-stacking-shift</li>
+                        <ul>
+                            <li>consider-shifts</li>
+                            <li>disregard-shifts</li>
+                        </ul>
+                    <li>line-stacking</li>
+                        <ul>
+                            <li>line-stacking-strategy</li>
+                            <li>line-stacking-ruby</li>
+                            <li>line-stacking-shift</li>
+                        </ul>
+                    <li>text-height</li>
+                        <ul>
+                            <li>auto</li>
+                            <li>text-size</li>
+                            <li>font-size</li>
+                            <li>max-size</li>
+                        </ul>
+                    <li>vertical-align</li>
+                        <ul>
+                            <li>baseline</li>
+                            <li>sub</li>
+                            <li>super</li>
+                            <li>top</li>
+                            <li>text-top</li>
+                            <li>middle</li>
+                            <li>bottom</li>
+                            <li>text-bottom</li>
+                            <li>length</li>
+                            <li>%</li>
+                        </ul>
+                </ul>
+            </div>
+            <hr> 
+            <div class="csscontainer">
+                <h2 id="hyplink">Hyper Link</h2>
+                <ul>
+                    <li>target</li>
+                        <ul>
+                            <li>target-name</li>
+                            <li>target-new</li>
+                            <li>target-position</li>
+                        </ul>
+                    <li>target-name</li>
+                        <ul>
+                            <li>curent</li>
+                            <li>root</li>
+                            <li>parent</li>
+                            <li>new</li>
+                            <li>modal</li>
+                            <li>string</li>
+                        </ul>
+                    <li>target-new</li>
+                        <ul>
+                            <li>window</li>
+                            <li>tab</li>
+                            <li>none</li>
+                        </ul>
+                    <li>target-position</li>
+                        <ul>
+                            <li>above</li>
+                            <li>behind</li>
+                            <li>front</li>
+                            <li>back</li>
+                        </ul>
+                </ul>
+            </div>
+            <hr> 
+            <div class="csscontainer">
+                <h2 id="position">Positioning</h2>
+                <ul>
+                    <li>static (default)</li>
+                        <ul>
+                            <li>bottom</li>
+                            <li>clip</li>
+                            <li>left</li>
+                            <li>position</li>
+                            <li>right</li>
+                            <li>top</li>
+                        </ul>
+                    <li>relative</li>
+                        <ul>
+                            <li>bottom</li>
+                            <li>clip</li>
+                            <li>left</li>
+                            <li>position</li>
+                            <li>right</li>
+                            <li>top</li>
+                        </ul>
+                    <li>fixed</li>
+                        <ul>
+                            <li>bottom</li>
+                            <li>clip</li>
+                            <li>left</li>
+                            <li>position</li>
+                            <li>right</li>
+                            <li>top</li>
+                        </ul>
+                    <li>absolute</li>
+                        <ul>
+                            <li>bottom</li>
+                            <li>clip</li>
+                            <li>left</li>
+                            <li>position</li>
+                            <li>right</li>
+                            <li>top</li>
+                        </ul>
+                    <li>sticky</li>
+                        <ul>
+                            <li>bottom</li>
+                            <li>clip</li>
+                            <li>left</li>
+                            <li>position</li>
+                            <li>right</li>
+                            <li>top</li>
+                        </ul>
+                </ul>
+            </div>
+            <hr> 
+            <div class="csscontainer">
+                <h2 id="ruby">Ruby</h2>
+                <ul>
+                    <li>ruby-align</li>
+                        <ul>
+                            <li>auto</li>
+                            <li>start</li>
+                            <li>left</li>
+                            <li>center</li>
+                            <li>end</li>
+                            <li>right</li>
+                            <li>distribute-letter</li>
+                            <li>distribute-space</li>
+                            <li>line-edge</li>
+                        </ul>
+                    <li>ruby-overhang</li>
+                        <ul>
+                            <li>auto</li>
+                            <li>start</li>
+                            <li>end</li>
+                            <li>none</li>
+                        </ul>
+                    <li>ruby-position</li>
+                        <ul>
+                            <li>before</li>
+                            <li>after</li>
+                            <li>right</li>
+                            <li>inline</li>
+                        </ul>
+                    <li>ruby-span</li>
+                        <ul>
+                            <li>attr(x)</li>
+                            <li>none</li>
+                        </ul>
+                </ul>
+            </div>
+            <hr> 
+            <div class="csscontainer">
+                <h2 id="pagmedia">Paged Media</h2>
+                <ul>
+                    <li>fit</li>
+                        <ul>
+                            <li>fill</li>
+                            <li>hidden</li>
+                            <li>meet</li>
+                            <li>slice</li>
+                        </ul>
+                    <li>fit-position</li>
+                        <ul>
+                            <li>top</li>
+                            <li>center</li>
+                            <li>bottom</li>
+                            <li>left</li>
+                            <li>center</li>
+                            <li>right</li>
+                            <li>length</li>
+                            <li>%</li>
+                        </ul>
+                    <li>orphans</li>
+                        <ul>
+                            <li>integer</li>
+                        </ul>
+                    <li>image-orientation</li>
+                        <ul>
+                            <li>auto</li>
+                            <li>angle</li>
+                        </ul>
+                    <li>page</li>
+                        <ul>
+                            <li>auto</li>
+                            <li>identifier</li>
+                        </ul>
+                    <li>page-break-after</li>
+                        <ul>
+                            <li>auto</li>
+                            <li>always</li>
+                            <li>avoid</li>
+                            <li>left</li>
+                            <li>right</li>
+                        </ul>
+                    <li>page-break-before</li>
+                        <ul>
+                            <li>auto</li>
+                            <li>always</li>
+                            <li>avoid</li>
+                            <li>left</li>
+                            <li>right</li>
+                        </ul>
+                    <li>page-break-inside</li>
+                        <ul>
+                            <li>auto</li>
+                            <li>avoid</li>
+                        </ul>
+                    <li>size</li>
+                        <ul>
+                            <li>auto</li>
+                            <li>landscape</li>
+                            <li>portrait</li>
+                            <li>length</li>
+                        </ul>
+                    <li>windows</li>
+                        <ul>
+                            <li>integer</li>
+                        </ul>
+                </ul>
+            </div>
+            <a href="#top" class="arrow">&#128285;</a>
+            <br>
+            <hr>
+            <br>
+            <p>Please note thisis not an up to date reference, it is just a project i had to make!</p>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>
+            M4tryxXx<br> 2024
+        </p>
+    </footer>

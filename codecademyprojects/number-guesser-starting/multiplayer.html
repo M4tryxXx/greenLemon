@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Number Guesser - M4tryxXx</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,700"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="game-container">
+      <header>
+        <div>
+          <h1>Number Guesser!</h1>
+          <button>
+            <a
+              style="
+                text-decoration: none;
+                font-weight: bold;
+                font-size: 1.7rem;
+              "
+              href="index.html"
+              >Home</a
+            >
+          </button>
+          <div id="top-name">
+            <input
+              style="margin: 20px auto; font-size: 1.7rem"
+              type="text"
+              id="name-one"
+              value=""
+              placeholder="Player One Name"
+            /><br />
+            <input
+              style="margin-bottom: 20px; font-size: 1.7rem"
+              type="text"
+              id="name-two"
+              value=""
+              placeholder="Player Two Name"
+            /><br />
+            <button
+              style="
+                padding: 5px 10px;
+                font-weight: bold;
+                color: rgb(10, 30, 250);
+                font-size: 1.7rem;
+              "
+              onclick="changePlayerNames()"
+            >
+              Save Player Names
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <div class="rounds">
+        <p class="round-label">Round <span id="round-number">1</span></p>
+        <p class="guess-label">
+          Target Number: <span id="target-number">?</span>
+        </p>
+      </div>
+
+      <div class="guessing-area">
+        <div class="guess human-guess">
+          <div class="guess-title">
+            <p class="guess-label" id="set-name-one">Player One</p>
+            <p class="score-label">
+              Score: <span id="human-one-score" class="human-one-score">0</span>
+            </p>
+            <input id="score-one" type="number" value="" hidden />
+          </div>
+          <input type="number" id="human-one-guess" min="0" max="9" value="0" />
+          <div class="number-controls">
+            <button class="number-control left" id="subtract-one" disabled>
+              -
+            </button>
+            <button class="number-control right" id="add-one">+</button>
+          </div>
+          <button class="button-one" id="guess-one">Make a Guess</button>
+        </div>
+        <div class="guess human-guess">
+          <div class="guess-title">
+            <p class="guess-label" id="set-name-two">Player Two</p>
+            <p class="score-label">
+              Score: <span id="human-two-score" class="human-two-score">0</span>
+            </p>
+            <input id="score-two" type="number" value="" hidden />
+          </div>
+          <input type="number" id="human-two-guess" min="0" max="9" value="0" />
+          <div class="number-controls">
+            <button class="number-control left" id="subtract-two" disabled>
+              -
+            </button>
+            <button class="number-control right" id="add-two">+</button>
+          </div>
+          <button class="button-two" id="guess-two">Make a Guess</button>
+        </div>
+      </div>
+
+      <div class="next-round-container">
+        <button class="button" id="play-game" disabled>Play</button>
+      </div>
+
+      <div class="next-round-container">
+        <button class="button" id="next-round" disabled>Next Round</button>
+      </div>
+    </div>
+
+    <div class="instructions">
+      <div class="instruction">
+        <h3>Step 1</h3>
+        <p>
+          Player one input a number between 0 and 9 and click "Make a Guess" to
+          register your choice
+        </p>
+      </div>
+      <div class="instruction">
+        <h3>Step 2</h3>
+        <p>
+          Player two input a number between 0 and 9 and click "Make a Guess" to
+          register your choice
+        </p>
+      </div>
+      <div class="instruction">
+        <h3>Step 3</h3>
+        <p>
+          Click "Play" to see the target number and who wins, click "Next Round"
+          to start a new round.
+        </p>
+      </div>
+    </div>
+
+    <script src="./js/gameMultiplayer.js"></script>
+    <script src="./js/scriptMultiplayer.js"></script>
+  </body>
+</html>

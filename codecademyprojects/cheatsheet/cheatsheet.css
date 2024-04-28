@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+    color:rgb(168, 255, 168);
+}
+
+body {
+    background-color: rgb(0, 7, 0);
+}
+
+.arrow {
+    position: sticky;
+    bottom: 100px;
+    left: 80%;
+    font-size: 3em;
+    text-decoration: none;
+    background-color: rgba(0, 255, 0, 0.986);
+    border-radius: 10%;
+}
+
+main {
+    width: 90%;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+header {
+    background-color: rgb(0, 7, 0);
+    color: lime;
+    text-align: center;
+    margin: auto;
+}
+
+body nav {
+    display: inline-block;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+body nav a {
+    text-decoration: none;
+    background-color: rgb(46, 71, 30);
+    padding: 10px 20px;
+    margin:10px;
+    font-size: 1em;
+    font-weight: bold;
+    color: rgb(245, 133, 93);
+    text-align: center;
+}
+
+.containertable {
+    margin: 30px 20px;
+}
+
+.title {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 20px 5px;
+}
+
+.table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 90%;
+    margin: auto;
+    display: table;
+    border: 1px solid #ccc;
+    color: rgb(168, 255, 168);
+}
+
+.table tbody tr th {
+    text-align: left;
+    padding: 3px 15px;
+    color: coral;
+}
+
+.table tbody tr {
+    border-bottom: 1px solid #ddd;
+    background-color: rgb(29, 44, 19);
+}
+
+.table tbody tr td {
+    padding: 3px 15px;
+}
+
+.table tbody tr:nth-child(2n+1) {
+    background-color: rgb(46, 71, 30);
+  }
+
+
+
+  .notsupported, .deprecated {
+    color: red;
+  }
+
+  .csscontainer>ul>li {
+    color: rgb(255, 144, 103);
+    font-weight: bold;
+  }
+
+  body ul {
+    font-weight: bold;
+    text-align: left;
+}
+
+  hr {
+    width: 88%;
+  }
+
+  footer {
+    text-align: center;
+  }
+
+  @media screen and (max-width: 590px) {
+    body nav {
+        display: block;
+    }
+
+    body nav a {
+        display: block;
+        margin: 10px auto;
+        width: 80%;
+        font-size: .9em;
+    }
+    
+    th {
+        font-size: .8em;
+    }
+  }

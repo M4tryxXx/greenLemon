@@ -1,0 +1,256 @@
+* {
+  font-family: 'Nunito Sans';
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  padding: 3px;
+  background-color: #fff;
+}
+
+.game-container {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+header {
+  display: flex;
+  justify-content: center
+}
+
+.rounds {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.round-label {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 0px;
+}
+
+#round-number {
+  color: #f70000;
+  font-size: 2rem;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+#target-number {
+  color: #ff0000;
+  font-size: 2rem;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.guess {
+  width: 45%;
+  height: 328px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 19px;
+}
+
+.guessing-area {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-bottom: 60px;
+  max-width: 1000px;
+  height: auto;
+  margin: auto;
+}
+
+.guess-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+
+.guess-label {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.score-label {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+
+#computer-score , #human-score, .human-one-score, .human-two-score {
+  color: #ff0000;
+  font-size: 2rem;
+  padding-left: 8px;
+  padding-right: 8px;
+  font-weight: bold;
+}
+
+.target-guess {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.computer-guess {
+  background-color: #ececec;
+  border: 1px solid #979797;
+  height: 420px;
+}
+
+#computer-guess {
+  font-size: 50px;
+  font-weight: 700;
+  color: #a5a5a5;
+  margin: auto;
+}
+
+.human-guess {
+  border: 1px solid #979797;
+  height: 420px;
+}
+
+.guess input {
+  height: 90px;
+  width: 90px;
+  font-size: 30px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 7px;
+}
+
+.number-controls {
+  font-size: 0;
+  margin-bottom: 23px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.number-control {
+  border: solid 2px #4c7ef3;
+  display: inline-block;
+  width: 45%;
+  height: 45px;
+  font-size: 28px;
+  font-weight: 700;
+  color: #4c7ef3;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+.number-controls button[disabled] {
+  color: #dfdfdf;
+  cursor: default;
+}
+
+.left {
+  border-top-left-radius: 22.5px;
+  border-bottom-left-radius: 22.5px;
+  border: 2px solid #00dd00;
+}
+
+.right {
+  border-top-right-radius: 22.5px;
+  border-bottom-right-radius: 22.5px;
+  border-left-width: 0px;
+  border: 2px solid #00dd00;
+}
+
+.left[disabled] , .right[disabled] {
+  border: 1px dotted #ff0000;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-around;
+}
+
+.button, .button-one, .button-two{
+  background-color: #4c7ef3;
+  color: #fff;
+  cursor: pointer;
+  border: 2px solid #00dd00;
+}
+
+#guess, #guess-one, #guess-two {
+  padding: 5px 15px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+#play-game {
+  width: 179px;
+  height: 64px;
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+#next-round {
+  width: 179px;
+  height: 64px;
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 60px;
+  margin-top: 20px;
+}
+  
+.button[disabled], .button-one[disabled], .button-two[disabled] {
+  background-color: #d2d2d2;
+  color: #a0a0a0;
+  cursor: default;
+  border: 1px dotted #ff0000;
+}
+
+.instructions {
+  background-color: #ececec;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.instruction {
+  width: 29%;
+  padding: 2px;
+  text-align: center;
+}
+
+.instructions h3 {
+  font-size: 18px;
+}
+
+
+.winning-text, .winning-text[disabled] {
+  color: rgb(0, 121, 0);
+  font-weight: 700;
+}
+
+.loosing-text, .loosing-text[disabled] {
+  color: rgb(216, 0, 0);
+  font-weight: 700;
+}
+
+.draw-text, .draw-text[disabled] {
+  color: rgb(3, 0, 204);
+  font-weight: 700;
+}
