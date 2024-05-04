@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 22px;
+}
+
+body {
+    background-color: #fff3f5;
+    width: 90%;
+    margin: .7rem auto;
+}
+
+header {
+    height: 150px;
+    padding: 0;
+    display: flex;
+    width: 95%;
+    margin: auto;
+    border-bottom: 14px solid transparent;
+    border-image: url(./images/heart.svg) 30% round;
+}
+
+.logo {
+    padding: 0;
+    width:25%;
+    height: auto;
+    max-width: 150px;
+    animation: spin 7s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+header h1 {
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 700;
+    width: 84%;
+    text-align: center;
+    color: #001530;
+    text-shadow: 3px 3px 5px #420000;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+main {
+    margin-top: 1rem;
+}
+
+.quantity {
+    font-size: 1.15rem;
+    color: #001530;
+    text-shadow: 2px 2px 5px #4200008c;
+}
+
+p {
+    font-weight: 500;
+    text-size: 1.1rem;
+}
+
+.instructionscontent {
+    display: block;
+    text-align: center;
+}
+
+.instructions {
+    width: 95%;
+    margin: auto;
+    text-align: center;
+    border: 10px solid transparent;
+    padding: 15px;
+    border-image: url(./images/heart.svg) 30% round;
+    border-radius: 15px;
+    color: #001530;
+    text-shadow: 2px 2px 5px #4200008c;
+    padding: .4rem 1rem;
+}
+
+.message-content {
+    text-align: center;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.draw-button {
+    padding: .5rem 2rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: #420000;
+    margin: 3px auto;
+    box-shadow: -1px 2px 0;
+    height: 2.3rem;
+    width: 8rem;
+    background-color: #e3e4f0;
+    font-size: 1rem;
+}
+
+.draw-button:hover {
+    background-color: #c5c5cf;
+}
+
+.draw-button:active {
+    margin: 0px auto;
+    box-shadow: none;
+    height: 2.3rem;
+    width: 8rem;
+    background-color: #adadb9;
+}
+
+.back-button {
+    padding: .5rem 2rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: #420000;
+    margin: 3px auto;
+    box-shadow: -1px 2px 0;
+    display: none;
+    height: 2.4rem;
+    width: 10rem;
+    background-color: #e3e4f0;
+    font-size: 1rem;
+}
+
+.back-button:hover {
+    background-color: #c5c5cf;
+}
+
+.back-button:active {
+    margin: 0px auto;
+    box-shadow: none;
+    height: 2.4rem;
+    width: 10rem;
+    background-color: #adadb9;
+}
+
+footer {
+    border-top: 14px solid transparent;
+    border-image: url(./images/heart.svg) 30% round;
+    font-size: .8rem;
+    text-align: center;
+    padding: .6rem;
+    text-shadow: 2px 2px 5px #4200008c;
+}
+
