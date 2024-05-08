@@ -13,11 +13,11 @@
 
     <main>
         <h3>Type the message you want to encrypt below (Without punctuation)!</h3>
-        <input type="text" name="toEncryptMsg" id="toEncryptMsg" class="toEncryptMsg" placeholder="Insert message" value="">
+        <input type="text" name="toEncryptMsg" id="toEncryptMsg" class="toEncryptMsg" placeholder="Insert message" value="" style="font-size: 1rem; width: 90%; margin: auto;">
         <br>
         <br>
         <h3>Choose the encryption method below! </h3>
-        <input type="number" name="encryptMethod" id="encryptMethod" value="1" min="1" max="20" style="font-size: 1rem; width: 90%; margin: auto;">
+        <input type="number" name="encryptMethod" id="encryptMethod" value="1" min="1" max="20" style="font-size: 1rem;">
         <br>
         <br>
         <button id="encryptBtn" class="encryptBtn">Encrypt</button>
@@ -26,11 +26,11 @@
         <hr>
         <br>
 
-        <input type="text" name="toDecryptMsg" id="toDecryptMsg" class="toDecryptMsg" placeholder="Insert message" value="">
+        <input type="text" name="toDecryptMsg" id="toDecryptMsg" class="toDecryptMsg" placeholder="Insert message" value="" style="font-size: 1rem; width: 90%; margin: auto;">
         <br>
         <br>
         <h3>Below is the Decryption level (note: if you encrypt using one method and try to decript using a different method it will not work that's why decript method is automatically set)!</h3>
-        <input type="number" name="decryptMethod" id="decryptMethod" value="1" min="1" max="20" readonly>
+        <input type="number" name="decryptMethod" id="decryptMethod" value="1" min="1" max="20" readonly style="font-size: 1rem;">
         <br>
         <br>
         <button id="decryptBtn" class="decryptBtn">Decrypt</button>
