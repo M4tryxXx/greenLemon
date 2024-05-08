@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Shift Encryptor</title>
+</head>
+<body>
+    <header>
+        <h1>Shift Cypher</h1>
+    </header>
+
+    <main>
+        <h3>Type the message you want to encrypt below (Without punctuation)!</h3>
+        <input type="text" name="toEncryptMsg" id="toEncryptMsg" class="toEncryptMsg" placeholder="Insert message" value="">
+        <br>
+        <br>
+        <h3>Choose the encryption method below! </h3>
+        <input type="number" name="encryptMethod" id="encryptMethod" value="1" min="1" max="20">
+        <br>
+        <br>
+        <button id="encryptBtn" class="encryptBtn">Encrypt</button>
+        <h3 id="encryptedMsg">Encrypted Message: <br><br></h3>
+
+        <hr>
+        <br>
+
+        <input type="text" name="toDecryptMsg" id="toDecryptMsg" class="toDecryptMsg" placeholder="Insert message" value="">
+        <br>
+        <br>
+        <h3>Below is the Decryption level (note: if you encrypt using one method and try to decript using a different method it will not work that's why decript method is automatically set)!</h3>
+        <input type="number" name="decryptMethod" id="decryptMethod" value="1" min="1" max="20" readonly>
+        <br>
+        <br>
+        <button id="decryptBtn" class="decryptBtn">Decrypt</button>
+        <h3 id="decryptedMsg">Decrypted Message: <br><br></h3>
+
+        <hr>
+    </main>
+
+    <footer>
+        <p>
+            Project By <a href="https://github.com/M4tryxXx">M4tryxXx</a><br>
+            @codeCademy <br />
+            May - 2024
+          </p>
+    </footer>
+</body>
+<script type="module" src="./main.js" ></script>
+</html>
