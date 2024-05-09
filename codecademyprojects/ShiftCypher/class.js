@@ -3,7 +3,7 @@
 class ShiftCipher {
     constructor(integer) {
       this._offset = integer;
-      this._alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', '.', '!', '?'];
+      this._alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', '.', ',', '!', '?'];
     }
     //Encryption method.
     encrypt(string) {
@@ -18,13 +18,9 @@ class ShiftCipher {
         //Looping trough every word of string to be encrypted to extract each letter and find index of it to encrypt it.
         for (let j = 0; j < word.length; j++) {
           let leterIndex;
-          if (word[j] !== '!' ) {
             leterIndex = this._alphabet.findIndex(letter => {
               return letter === word[j].toLowerCase();
             });
-          } else {
-            tempArray.push(word[j]);
-          }
           let tempIndex = leterIndex + this._offset;
           let count = 0;
           //Function to wrap the encryption return.
@@ -55,13 +51,9 @@ class ShiftCipher {
         //Looping trough every word of string to be decrypted to extract each letter and find index of it to decrypt it.
         for (let j = 0; j < word.length; j++) {
           let leterIndex;
-          if (word[j] !== '!' ) {
             leterIndex = this._alphabet.findIndex(letter => {
               return letter === word[j].toLowerCase();
             });
-          } else {
-            tempArray.push(word[j]);
-          }
           let tempIndex = leterIndex - this._offset;
           let count = 0;
           //Function to wrap the decryption return.
