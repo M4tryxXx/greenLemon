@@ -40,7 +40,7 @@ class ShiftCipher {
         }
         encryptedArray.push(tempArray.join(''))
       }
-      encryptedString = encryptedArray.join('¬');
+      encryptedString = encryptedArray.join(' ');
       return encryptedString.toUpperCase();
     }
     decrypt(string) {
