@@ -46,7 +46,7 @@ class ShiftCipher {
     decrypt(string) {
       let decryptedString = '';
       let decryptedArray = [];
-      const stringArray = string.split('¬');
+      const stringArray = string.split(' ');
       //console.log(stringArray);
       //Looping trough string to be decrypted.
       for (let i = 0; i < stringArray.length; i++) {
