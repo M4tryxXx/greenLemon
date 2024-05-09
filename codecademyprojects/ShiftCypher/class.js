@@ -9,7 +9,8 @@ class ShiftCipher {
     encrypt(string) {
       let encryptedString = '';
       let encryptedArray = [];
-      const stringArray = string.split(' ');
+      const stringAfter = string.toLowerCase();
+      const stringArray = strungAfter.split(' ');
       //console.log(stringArray);
       //Looping trough string to be encrypted.
       for (let i = 0; i < stringArray.length; i++) {
@@ -19,7 +20,7 @@ class ShiftCipher {
         for (let j = 0; j < word.length; j++) {
           let leterIndex;
             leterIndex = this._alphabet.findIndex(letter => {
-              return letter === word[j].toLowerCase();
+              return letter === word[j];
             });
           let tempIndex = leterIndex + this._offset;
           let count = 0;
@@ -42,7 +43,8 @@ class ShiftCipher {
     decrypt(string) {
       let decryptedString = '';
       let decryptedArray = [];
-      const stringArray = string.split(' ');
+      const stringAfter = string.toLowerCase();
+      const stringArray = stringAfter.split(' ');
       //console.log(stringArray);
       //Looping trough string to be decrypted.
       for (let i = 0; i < stringArray.length; i++) {
@@ -52,7 +54,7 @@ class ShiftCipher {
         for (let j = 0; j < word.length; j++) {
           let leterIndex;
             leterIndex = this._alphabet.findIndex(letter => {
-              return letter === word[j].toLowerCase();
+              return letter === word[j];
             });
           let tempIndex = leterIndex - this._offset;
           let count = 0;
