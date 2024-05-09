@@ -10,7 +10,7 @@ class ShiftCipher {
       let encryptedString = '';
       let encryptedArray = [];
       const stringAfter = string.toLowerCase();
-      const stringArray = strungAfter.split(' ');
+      const stringArray = stringAfter.split(' ');
       //console.log(stringArray);
       //Looping trough string to be encrypted.
       for (let i = 0; i < stringArray.length; i++) {
