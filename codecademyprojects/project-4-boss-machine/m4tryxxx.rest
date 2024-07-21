@@ -1,0 +1,34 @@
+http://localhost:4001/api/meetings/1
+
+###
+
+GET http://localhost:4001/api/minions/3
+
+###
+
+DELETE http://localhost:4001/api/minions/11
+
+###
+
+GET http://localhost:4001/api/ideas/1
+
+###
+
+DELETE http://localhost:4001/api/ideas/1
+
+###
+
+POST http://localhost:4001/api/meetings 
+
+###
+
+GET http://localhost:4001/api/minions/7/work
+
+###
+
+PUT http://localhost:4001/api/minions/1/work/1
+
+###
+
+DELETE http://localhost:4001/api/minions/2/work
+
