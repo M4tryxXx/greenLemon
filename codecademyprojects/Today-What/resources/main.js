@@ -269,6 +269,7 @@ const takeMessage = () => {
     }
 //Used to check if message has been returned before, if true it will draw another message and check again until the message drawn was not shaved before at which point it will be saved rerurned and pushed in drawn array.
     while (notesPulled.includes(noteNum) === true || noteNum === 0) {
+        contentBox.appendChild(noteNum);
         noteNum = Math.floor(Math.random() * notesList.length);
         //console.log(messageNum);
     }
