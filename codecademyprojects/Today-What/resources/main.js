@@ -274,7 +274,7 @@ const takeMessage = () => {
     }
     notesPulled.push(noteNum);
     
-    return {notesList[noteNum];
+    return notesList[noteNum];
 
 }
 
